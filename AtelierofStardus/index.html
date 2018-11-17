@@ -9,31 +9,18 @@
 <script src="jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
 
-	var memorial = new Date("2012-09-01");
-	var systime = new Date();
-	var dif = parseInt(Math.abs(systime - memorial) / 1000 / 60 / 60 / 24);
-	var bnrDate = dif.toString(2).split("");
-	
+
 $(document).ready(function(){
 	//$("body").css("width", window.screen.width * window.devicePixelRatio);
 	$("body").css("width", window.innerWidth);
 	$("body").css("height", window.innerHeight);
+});
 $(window).resize(function () {
-	"use strict";
 	$("body").css("width", window.innerWidth);
 	$("body").css("height", window.innerHeight);
 });
 	
-	
-	$("#clcNeko").click(function(){
-		$("#neko").text("");
-		for ( var x in bnrDate)
-		{
-			if(bnrDate[x]=="1") $("#neko").append("喵");
-			if(bnrDate[x]=="0") $("#neko").append("咪");
-		}
-  	});
-});
+
 </script>
 
 </head>
@@ -45,7 +32,13 @@ $(window).resize(function () {
 	<tbody>
 		<tr><td align="center" style="font-size: 40px;">Atelier of Stardust</td></tr>
 		<tr><td align="center"><img src="stardust.jpg" height="200px"></td></tr>
-		<tr><td class="nav" align="center" style="font-size: 20px;"><a href="../bbs/index.php">Ellie's Forum</a>|<a href="NekoCount/index.html">Neco Count</a>|<a href="design/index.html">Exhibition</a>|<a href="https://space.bilibili.com/1441752/#/">Video Station</a></td></tr>
+		<tr><td class="nav" align="center" style="font-size: 20px;">
+		<a href="../bbs/index.php">Ellie's Forum</a>|
+		<a href="NekoCount/index.html">Neco Count</a>|
+		<a href="design/index.html">Exhibition</a>|
+		<a href="https://space.bilibili.com/1441752/#/">Video Station</a>
+		<a href="hero7/index.html">Hero7C</a>
+		</td></tr>
 	</tbody>
 </table>
 </div>

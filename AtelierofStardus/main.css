@@ -21,7 +21,7 @@ body {
 }
 .Startext {
 	font-size: 40px;
-	line-height: 80px;
+	line-height: 45px;
 }
 
 td {
@@ -36,16 +36,4 @@ td {
 	left:50%;
 	width: 500px;
 	margin-left: -250px;
-}
-
-
-a {
-	background: #222222;
-    color: #ACACAC;
-}
-
-a :hover {
-    
-    background: #000000;
-    color: #FFFFFF;
 }
